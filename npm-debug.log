@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save' ]
+2 info using npm@1.2.14
+3 info using node@v0.8.22
+4 verbose read json /home/keith/projects/usermanager/package.json
+5 error install Couldn't read dependencies
+6 error Error: ENOENT, open '/home/keith/projects/usermanager/package.json'
+7 error If you need help, you may report this log at:
+7 error     <http://github.com/isaacs/npm/issues>
+7 error or email it to:
+7 error     <npm-@googlegroups.com>
+8 error System Linux 3.2.0-29-virtual
+9 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save"
+10 error cwd /home/keith/projects/usermanager
+11 error node -v v0.8.22
+12 error npm -v 1.2.14
+13 error path /home/keith/projects/usermanager/package.json
+14 error code ENOENT
+15 error errno 34
+16 verbose exit [ 34, true ]
