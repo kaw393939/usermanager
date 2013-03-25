@@ -1,0 +1,98 @@
+#app{
+	width: 1024px;
+	height: 1024px;
+	margin: auto;
+	padding: 5px;
+	background-color: black;
+}
+
+#app #sidebar{
+	width: 150px;
+	height: 100%;
+	background-color: #666;
+	position: relative;
+	float: left;
+}
+
+#app #header{
+	width: 874px;
+	height: 100px;
+	margin-left: 150px;
+	background-color: white;
+}
+
+#app #notebar{
+	position: absolute;
+	width: 1024px;
+	height: 64px;
+	background-color: #000;
+}
+
+#app #appPage{
+	width: 674px;
+	height: 860px;
+	background-color: #ccc;
+	margin-left: 150px;
+	padding-left: 200px;
+}
+
+#app #appPage #appPage-inner{
+	height: 658px;
+	width: 642px;
+	background-color: white;
+	border: 1px solid #999;
+	margin-top: 64px;
+	padding: 100px 15px;
+}
+
+#accountsPage{
+	width: 100%;
+	height: 100%;
+}
+
+#accountsPage #accountsBox{
+	height: 362px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+
+#accountsPage #accountList{
+	
+}
+
+#accountsPage #accountDetails{
+	
+}
+
+#accountsPage .box{
+	border: 1px solid #aaa;
+}
+
+#accountsPage #box1{
+	height: 125px;
+	margin-bottom: 20px;
+}
+
+#accountsPage #box2.box{
+	height: 125px;
+	margin-bottom: 20px;
+	position: relative;
+	float: left;
+	width: 309px;
+	margin-right: 20px;
+}
+
+#accountsPage #box3.box{
+	height: 125px;
+	margin-bottom: 20px;
+	position: relative;
+	float: left;
+	width: 309px;
+}
+
+#accountsPage .header{
+	width: 100%	;
+	height: 30px;
+	background-color: black;
+	color: white;
+}

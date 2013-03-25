@@ -11,7 +11,17 @@
     window.Account = Backbone.Model.extend({});
 
     window.Controller = Backbone.Model.extend({
-
+		defaults: {
+			state: 'accounts'
+		},
+		
+		setState: function (state) {
+			this.set({state: state});
+		},
+		
+		getState: function () {
+			return this.get('state');
+		}
     });
 
     /////-----   COLLECTIONS   -----/////
@@ -34,6 +44,7 @@
     window.pages = new window.Pages();
     window.assets = new window.Assets();
     window.accounts = new window.Accounts();
+    window.controller = new window.Controller();
 
     $(document).ready(function () {
 
@@ -49,11 +60,27 @@
 
             initialize: function () {
                 this.controller = this.options.controller;
+                this.controller.bind('change:state', this.changePage, this);
             },
 
             render: function () {
                 $(this.el).html(this.template({}));
+                this.changePage();
                 return this;
+            },
+            
+            changePage: function(){
+            	var state = this.controller.getState();
+            	console.log('pew pew')
+            	if (state == 'accounts'){
+            		this.page = new window.AccountsView({
+            			el: $('#appPage-inner'),
+            			controller: this.controller,
+            			collection: window.accounts
+            		});
+            	}
+            	
+            	this.page.render();
             }
         });
 
@@ -199,7 +226,12 @@
         },
 
         initialize: function () {
-
+        	this.controller = window.controller
+			this.appView = new window.AppView({
+				el: $('#app'),
+				controller: this.controller
+			});
+			this.appView.render();
         },
 
         home: function () {
@@ -215,7 +247,7 @@
         },
 
         accounts: function () {
-
+			this.controller.setState('accounts');
         },
 
         services: function () {
