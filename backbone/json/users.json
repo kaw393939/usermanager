@@ -1,0 +1,111 @@
+[{
+	"firstName": "James",
+	"lastName": "Abercrombie",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Richard",
+	"lastName": "Allen",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "John",
+	"lastName": "Andrew",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Jane",
+	"lastName": "Doe",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "John",
+	"lastName": "Doe",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Tracy",
+	"lastName": "Emmins",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Frank",
+	"lastName": "Thomas",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Paul",
+	"lastName": "Garrison",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Robert",
+	"lastName": "Johnson",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+},{
+	"firstName": "Rachel",
+	"lastName": "London",
+	"roles": [{
+		"role": "Administrator",
+		"role": "Event Planner"
+	}],
+	"picture": "img/defaultProfilePicture.png",
+	"joinDate": "4/23/13",
+	"lastLogin": "4/23/13",
+	"notes": ""
+}]

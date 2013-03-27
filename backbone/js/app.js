@@ -37,8 +37,14 @@
     });
 
     window.Accounts = Backbone.Collection.extend({
-        url: 'json/assets.json',
-        model: window.Account
+        url: 'json/users.json',
+        model: window.Account,
+        
+        initialize : function(){
+            this.fetch({
+                update: true
+            });
+        }
     });
 
     window.pages = new window.Pages();
