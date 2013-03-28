@@ -73,10 +73,10 @@
 					<div id = "accountsBox-header" class = "header">
 					
 					</div>
-					<div id = "accountList">
+					<div id = "accountDetails">
 					
 					</div>
-					<div id = "accountDetails">
+					<div id = "accountList">
 					
 					</div>
 				</div>
@@ -95,11 +95,37 @@
 		</script>
 		
 		<script type = "text/template" id = "accountView-template">
-			
+			<div id = {{uid}} class = "accountView">
+				<span class = "account-checkbox-container">
+					<input type = "checkbox" class = "account-checkbox" data-id = {{uid}}>
+				</span>
+				<span class = "account-name-container">
+					{{lastName}}, {{firstName}}
+				</span>
+			</div>
 		</script>
 		
 		<script type = "text/template" id = "accountDetails-template">
-			
+			<div class = "profilePicture">
+				<img src = {{picture}} />
+			</div>
+			<h2 class = "name">{{firstName}} {{lastName}}</h2>
+			<div class = "accountInfo">
+				<div class = "login">Last Login: {{lastLogin}}</div>
+				<div class = "join">Join Date: {{joinDate}}</div>
+				<div class = "roles">Roles: </div>
+				<div class = "bio">Bio: {{bio}}</div>
+			</div>
+			<div class = "profileMenu">
+				<img src = "img/buttons/24_edit.png" id = "edit" class = "button" />
+				<img src = "img/buttons/24_email.png" id = "email" class = "button" />
+				<img src = "img/buttons/24_archive.png" id = "archive" class = "button" />
+				<img src = "img/buttons/24_close.png" id = "exit" class = "button" />
+			</div>
+		</script>
+		
+		<script type = "text/template" id = "accountRole-template">
+			<span class = "role indent">{{role}}</span><br />
 		</script>
 		
 		<script type = "text/template" id = "serviceView-template">

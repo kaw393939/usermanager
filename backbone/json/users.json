@@ -1,87 +1,119 @@
 [{
 	"firstName": "James",
 	"lastName": "Abercrombie",
+	"uid": 0,
+	"userName": "jAbercrombie",
+	"email": "jAbercrombie@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "Richard",
 	"lastName": "Allen",
+	"uid": 1,
+	"userName": "rAllen",
+	"email": "rAllen@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "John",
 	"lastName": "Andrew",
+	"uid": 2,
+	"userName": "jAndrew",
+	"email": "jAndrew@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "Jane",
 	"lastName": "Doe",
+	"uid": 3,
+	"userName": "jDoe",
+	"email": "jDoe@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "John",
 	"lastName": "Doe",
+	"uid": 4,
+	"userName": "jDoe2",
+	"email": "jDoe2@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "Tracy",
 	"lastName": "Emmins",
+	"uid": 5,
+	"userName": "tEmmins",
+	"email": "tEmmins",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "Frank",
 	"lastName": "Thomas",
+	"uid": 6,
+	"userName": "fThomas",
+	"email": "fThomas@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "Paul",
 	"lastName": "Garrison",
+	"uid": 7,
+	"userName": "pGarrison",
+	"email": "pGarrison@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
@@ -89,23 +121,31 @@
 },{
 	"firstName": "Robert",
 	"lastName": "Johnson",
+	"uid": 8,
+	"userName": "rJohnson",
+	"email": "rJohnson@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 },{
 	"firstName": "Rachel",
 	"lastName": "London",
+	"uid": 9,
+	"userName": "rLondon",
+	"email": "rLondon@gmail.com",
 	"roles": [{
-		"role": "Administrator",
-		"role": "Event Planner"
-	}],
+			"role": "Administrator"
+		},{
+			"role": "Event Planner"
+		}],
 	"picture": "img/defaultProfilePicture.png",
 	"joinDate": "4/23/13",
 	"lastLogin": "4/23/13",
-	"notes": ""
+	"bio": ""
 }]
