@@ -254,15 +254,7 @@
             },
             
             editProfile: function () {
-            	var view;
-            		console.log('pew')
-            	view = new window.EditAccountView({
-            		el: $('#appPage-inner'),
-            		model: this.model,
-            		controller: this.controller
-            	});
-            	
-            	view.render();
+            	document.location.href += '#accounts/edit/'+this.model.get('uid');
             }
         });
         
@@ -321,23 +313,20 @@
 
 	    window.App = Backbone.Router.extend({
 	
-	        routes: {
+	        routes : {
 	            '': 'accounts',
 	            'home': 'home',
 	            'pages': 'pages',
 	            'assets': 'assets',
 	            'accounts': 'accounts',
+	            'accounts/edit/:id' : 'editAccount',
 	            'services': 'services',
 	            'settings': 'settings'
 	        },
 	
 	        initialize: function () {
-	        	this.controller = window.controller
-				this.appView = new window.AppView({
-					el: $('#app'),
-					controller: this.controller
-				});
-				this.appView.render();
+	        	
+				console.log(this.routes)
 	        },
 	
 	        home: function () {
@@ -353,7 +342,26 @@
 	        },
 	
 	        accounts: function () {
+	            this.controller = window.controller;
 				this.controller.setState('accounts');
+				
+                this.accounts = window.accounts;
+                this.appView = new window.AppView({
+                    el: $('#app'),
+                    controller: this.controller
+                });
+                this.appView.render();
+	        },
+	        
+	        editAccount: function (id) {
+	            console.log('router function')
+                this.editAccount = new window.EditAccountView({
+                    el: $('#appPage-inner'),
+                    model: this.accounts.at(id),
+                    controller: this.controller
+                });
+                
+                this.editAccount.render();
 	        },
 	
 	        services: function () {

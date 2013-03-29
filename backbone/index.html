@@ -129,7 +129,34 @@
 		</script>
 		
 		<script type = "text/template" id = "editAccount-template">
-			pew pew
+			<div id = "editAccount">
+				<label for = "profilePicture">Profile Picture</label>
+				<div id = "profilePicture">
+					<img src = {{picture}} />
+				</div>
+				<input type = "file" id = "pictureUpload" />
+				
+				<div id = "editfName">
+					<label for = "firstName">First Name</label>
+					<input type = "text" id = "firstName" value = {{firstName}} />
+				</div>	
+				<div id = "editlName">
+					<label for = "lastName">Last Name</label>
+					<input type = "text" id = "lastName" value = {{lastName}} />
+				</div>
+				
+				<div id = "email-container">
+					<label for = "email">Email</label>
+					<input type = "text" id = "email" value = {{email}} />
+				</div>
+				
+				<div id = "bio-container">
+					<label for = "bio">Bio</label>
+					<textarea id = "bio">{{bio}}</textarea>
+				</div>
+				
+			</div>
+				
 		</script>
 		
 		<script type = "text/template" id = "serviceView-template">
