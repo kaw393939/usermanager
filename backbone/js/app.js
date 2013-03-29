@@ -232,7 +232,11 @@
         window.AccountDetailsView = Backbone.View.extend({
             template: Handlebars.compile($('#accountDetails-template').html()),
             roleTemplate: Handlebars.compile($('#accountRole-template').html()),
-
+			
+			events:{
+				'click #edit' : 'editProfile'
+			},
+			
             initialize: function () {
                 this.controller = this.options.controller;
             },
@@ -247,8 +251,33 @@
                 	}
                 }
                 return this;
+            },
+            
+            editProfile: function () {
+            	var view;
+            		console.log('pew')
+            	view = new window.EditAccountView({
+            		el: $('#appPage-inner'),
+            		model: this.model,
+            		controller: this.controller
+            	});
+            	
+            	view.render();
             }
         });
+        
+        window.EditAccountView = Backbone.View.extend({
+        	template: Handlebars.compile($('#editAccount-template').html()),
+        	
+        	initialize: function () {
+        		this.controller = this.options.controller;
+        	},
+        	
+        	render: function () {
+        		$(this.el).html(this.template(this.model.toJSON()));
+        		return this;
+        	}
+        })
 
         /////           Services Views          /////
 
