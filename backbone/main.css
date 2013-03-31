@@ -220,4 +220,18 @@
 
 #editAccount #bio-container label{
 	margin-right: 42px;
+	display: block;
+}
+
+#editAccount #bio{
+	width: 248px;
+	height: 250px;
+}
+
+#deleteAccounts{
+	display: none;
+}
+
+#deleteAccounts.show{
+	display: inline-block;
 }

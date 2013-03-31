@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="js/libs/underscore.js"></script>
 		<script type="text/javascript" src="js/libs/handlebars.js"></script>
 	    <script type="text/javascript" src="js/libs/backbone.js"></script>
+	    <script type="text/javascript" src="js/libs/backbone.localStorage.js"></script>
 	    
 	    <!-- Actual JavaScript -->
 	    <script type="text/javascript" src="js/app.js"> </script>
@@ -65,8 +66,10 @@
 			<div id = "accountsPage" class = "appPage">
 				<div id = "box1" class = "box">
 					<div id = "box1-header" class = "header">
-					
+						
 					</div>
+					<button id = "addAccount">Add</button>
+					<button id = "deleteAccounts">Delete</button>
 				</div>
 				
 				<div id = "accountsBox">
@@ -138,23 +141,24 @@
 				
 				<div id = "editfName">
 					<label for = "firstName">First Name</label>
-					<input type = "text" id = "firstName" value = {{firstName}} />
+					<input type = "text" id = "firstName" value = {{firstName}}>
 				</div>	
 				<div id = "editlName">
 					<label for = "lastName">Last Name</label>
-					<input type = "text" id = "lastName" value = {{lastName}} />
+					<input type = "text" id = "lastName" value = {{lastName}}>
 				</div>
 				
 				<div id = "email-container">
 					<label for = "email">Email</label>
-					<input type = "text" id = "email" value = {{email}} />
+					<input type = "text" id = "email" value = {{email}}>
 				</div>
 				
 				<div id = "bio-container">
 					<label for = "bio">Bio</label>
 					<textarea id = "bio">{{bio}}</textarea>
 				</div>
-				
+				<button id = "submit">Submit</button>
+				<button id = "back">Back</button>
 			</div>
 				
 		</script>
